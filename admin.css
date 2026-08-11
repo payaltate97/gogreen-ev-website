@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #050505;
+    color: white;
+    min-height: 100vh;
+    padding: 40px 30px;
+}
+
+
+/* =========================
+   Main Container
+   ========================= */
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+/* =========================
+   Headings
+   ========================= */
+
+h1 {
+    text-align: center;
+    color: #39ff14;
+    font-size: 36px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   Table Wrapper
+   ========================= */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+
+/* =========================
+   Table
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #111111;
+    border: 1px solid #2d2d2d;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   Table Header
+   ========================= */
+
+thead {
+    background: #39ff14;
+    color: #000000;
+}
+
+th {
+    padding: 16px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   Action Header
+   ========================= */
+
+th:last-child {
+    width: 220px;
+    min-width: 220px;
+}
+
+
+/* =========================
+   Table Cells
+   ========================= */
+
+td {
+    padding: 15px 12px;
+    border-top: 1px solid #292929;
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   Row Hover
+   ========================= */
+
+tbody tr:hover {
+    background: #1c1c1c;
+}
+
+
+/* =========================
+   Action Cell
+   ========================= */
+
+td:last-child {
+    width: 220px;
+    min-width: 220px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* =========================
+   Action Buttons
+   ========================= */
+
+td:last-child button {
+    width: 85px;
+    height: 38px;
+
+    padding: 0;
+    margin: 3px;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* =========================
+   Confirm Button
+   ========================= */
+
+.confirm-btn {
+    background: #39ff14;
+    color: #000000;
+}
+
+.confirm-btn:hover {
+    background: #2fe612;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 12px rgba(57, 255, 20, 0.35);
+}
+
+
+/* =========================
+   Cancel Button
+   ========================= */
+
+.cancel-btn {
+    background: #ff4d4d;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #e63939;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 12px rgba(255, 77, 77, 0.35);
+}
+
+
+/* =========================
+   Status
+   ========================= */
+
+.status {
+    font-weight: 700;
+}
+
+
+/* =========================
+   Mobile / Smaller Screens
+   ========================= */
+
+@media (max-width: 1000px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    th,
+    td {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+    th:last-child,
+    td:last-child {
+        width: 210px;
+        min-width: 210px;
+    }
+
+    td:last-child button {
+        width: 82px;
+        height: 36px;
+
+        font-size: 12px;
+    }
+}

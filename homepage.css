@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+/* =========================
+   Navigation Bar
+   ========================= */
+
+.container {
+    height: 70px;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 40px;
+
+    border-bottom: 1px solid #333;
+}
+
+
+/* Left side */
+
+.home ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+}
+
+.home li:first-child {
+    color: #39ff14;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.home a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.home a:hover {
+    color: #39ff14;
+}
+
+
+/* Right side */
+
+.list ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.list a:hover {
+    color: #39ff14;
+}
+
+
+/* =========================
+   Vehicle Section
+   ========================= */
+
+.imageContainer {
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 50px 40px;
+}
+
+
+/* Left vehicle */
+
+.leftImage,
+.rightImage {
+    width: 45%;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #333;
+    border-radius: 15px;
+
+    background-color: #151515;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.leftImage:hover,
+.rightImage:hover {
+    border-color: #39ff14;
+    transform: translateY(-5px);
+}
+
+
+/* Vehicle images */
+
+.image1,
+.image2 {
+    width: 80%;
+    max-width: 450px;
+    height: 300px;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+}
+
+
+/* Vehicle name */
+
+.leftImage p,
+.rightImage p {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Buttons
+   ========================= */
+
+.button1,
+.button2 {
+    background-color: #39ff14;
+    color: black;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.button1:hover,
+.button2:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
+    height: 80px;
+
+    background-color: black;
+
+    border-top: 1px solid #333;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   Responsive Design
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .container {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    .home ul,
+    .list ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+    }
+
+    .leftImage,
+    .rightImage {
+        width: 90%;
+    }
+}

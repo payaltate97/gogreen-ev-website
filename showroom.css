@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body
+{
+    background-color: black;
+}
+
+
+/* Navigation */
+
+.navbar{
+    height:70px;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    color:white;
+
+}
+
+.navbar ul
+{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.navbar a
+{
+    text-decoration:none;
+    color:white;
+}
+
+.navbar a:hover
+{
+    color:#00e676;
+}
+
+
+/* image container*/
+.container
+{
+     background: linear-gradient(135deg,#0f172a,#1e293b);
+    margin-top: 100px;
+    margin-left:100px;
+    margin-right:100px;
+    height: 600px;
+    width:1200px;
+    display: flex;
+    flex: row;
+}
+
+.vehicle1
+{
+margin-top: 10px;
+margin-left: 10px;
+width:1300px;
+flex:1;
+}
+
+.image1,
+.image2
+{
+    margin-left:50px ;
+    width: 500px;
+}
+
+.des,
+.des2
+{  
+    margin-top: 50px;
+    flex:1;
+    font-size: 20px;
+    align-content: center;
+   
+}
+
+.image1:hover
+{
+ transform: scale(1.05);
+ }
+            
+
+.details
+{
+    padding: 13px;
+    color:white;
+}
+
+.button1
+{
+    margin-left: 200px;
+    width:150px;
+    height:50px;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px solid green;
+    
+}
+
+
+
+.container2
+{
+     background: linear-gradient(135deg,#0f172a,#1e293b);
+    margin-top: 100px;
+    margin-left:100px;
+    margin-right:100px;
+    height: 600px;
+    width:1200px;
+    display: flex;
+    flex: row;
+}
+
+

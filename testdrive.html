@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Test Drive</title>
+
+<link rel="stylesheet" href="testdrive.css">
+
+</head>
+
+<body>
+
+
+<div class="navbar">
+       
+        <div class="home">
+            <ul>
+             <li>Go Green Ev</li>
+            <li><a href="homepage.html">home</a></li>
+            </ul>
+           
+       </div>
+       
+        <div class="list">
+            
+        <ul>
+        <li><a href="showroom.html">Ev showroom</a></li>
+        <li><a href="testdrive.html">Book Test Drive</li>
+        <li><a href="login.html">user login</a></li>
+        </ul>
+    </div>
+    </div>
+
+
+<section class="booking">
+
+<h1>Book Your Test Drive</h1>
+
+<p class="heading">
+
+Experience your favourite electric vehicle before making your purchase.
+
+Select your preferred model, date and time, and our showroom team will contact you to confirm your booking.
+
+</p>
+
+<div class="container">
+
+<!-- ================= LEFT SIDE ================= -->
+
+<div class="booking-form">
+
+<h2>Test Drive Details</h2>
+
+<form id="testDriveForm">
+
+    <label for="fullName">Full Name</label>
+    <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Enter your full name"
+        required>
+
+
+    <label for="mobile">Mobile Number</label>
+    <input
+        type="tel"
+        id="mobile"
+        name="mobile"
+        placeholder="Enter your mobile number"
+        required>
+
+
+    <label for="email">Email Address</label>
+
+   <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Enter your email"
+    readonly>
+
+
+    <label for="city">City</label>
+    <input
+        type="text"
+        id="city"
+        name="city"
+        placeholder="Enter your city"
+        required>
+
+
+    <label for="evModel">Select EV Model</label>
+    <select id="evModel" name="evModel" required>
+
+        <option value="">Select EV Model</option>
+
+        <option value="Electra E-Scoot X1">
+            Electra E-Scoot X1
+        </option>
+
+        <option value="Electra Phantom X">
+            Electra Phantom X
+        </option>
+
+    </select>
+
+
+    <label for="preferredDate">Preferred Date</label>
+    <input
+        type="date"
+        id="preferredDate"
+        name="preferredDate"
+        required>
+
+
+    <label for="preferredTime">Preferred Time Slot</label>
+    <select id="preferredTime" name="preferredTime" required>
+
+        <option value="">Select Time Slot</option>
+
+        <option value="10:00 AM">10:00 AM</option>
+        <option value="12:00 PM">12:00 PM</option>
+        <option value="2:00 PM">2:00 PM</option>
+        <option value="4:00 PM">4:00 PM</option>
+        <option value="6:00 PM">6:00 PM</option>
+
+    </select>
+
+
+    <label for="additionalNotes">Additional Notes</label>
+
+    <textarea
+        id="additionalNotes"
+        name="additionalNotes"
+        placeholder="Enter any additional notes"></textarea>
+
+
+    <button type="submit">
+        Book Test Drive
+    </button>
+
+</form>
+</div>
+
+<!-- RIGHT SIDE STARTS HERE -->
+<div class="booking-info">
+
+<h2>Booking Process</h2>
+
+
+
+<div class="process-card">
+
+    <div class="number">1</div>
+
+    <div>
+
+        <h3>Select Your EV</h3>
+
+        <p>Choose the electric scooter you want to experience.</p>
+
+    </div>
+
+</div>
+
+<div class="process-card">
+
+    <div class="number">2</div>
+
+    <div>
+
+        <h3>Choose Date</h3>
+
+        <p>Select a convenient date for your visit.</p>
+
+    </div>
+
+</div>
+
+<div class="process-card">
+
+    <div class="number">3</div>
+
+    <div>
+
+        <h3>Select Time Slot</h3>
+
+        <p>Book a time according to your schedule.</p>
+
+    </div>
+
+</div>
+
+<div class="process-card">
+
+    <div class="number">4</div>
+
+    <div>
+
+        <h3>Submit Request</h3>
+
+        <p>We'll receive your booking instantly.</p>
+
+    </div>
+
+</div>
+
+<div class="process-card">
+
+    <div class="number">5</div>
+
+    <div>
+
+        <h3>Confirmation Call</h3>
+
+        <p>Our showroom team will contact you to confirm your booking.</p>
+
+    </div>
+
+</div>
+
+<div class="help">
+
+<h2>Need Assistance?</h2>
+
+<p>📞 +91 9876543210</p>
+
+<p>✉ support@gogreenev.com</p>
+
+<p>🕒 Monday - Saturday</p>
+
+<p>9:00 AM - 7:00 PM</p>
+
+</div>
+
+<div class="note">
+
+<h3>Important</h3>
+
+<p>
+
+Your booking request will be confirmed only after
+our showroom verifies vehicle availability.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="testdrive.js"></script>
+
+</body>
+
+</html>
