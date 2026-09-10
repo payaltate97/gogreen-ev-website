@@ -8,7 +8,7 @@ COPY src ./src
 
 RUN chmod +x mvnw 2>/dev/null || true
 
-RUN mvn clean package -DskipTests
+RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
